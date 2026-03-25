@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Analyzer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-shape shape1"></div>
+  <div class="background-shape shape2"></div>
+
+  <div class="container">
+    <div class="card">
+      <h1>Text Analyzer</h1>
+      <p class="subtitle">Analyze your paragraph with style</p>
+
+      <textarea
+        id="textInput"
+        placeholder="Paste or type your paragraph here..."
+      ></textarea>
+
+      <button onclick="analyzeText()">Analyze Text</button>
+
+      <div class="result" id="resultBox">
+        <div class="result-item">
+          <span class="label">Total Characters</span>
+          <span class="value" id="charCount">0</span>
+        </div>
+
+        <div class="result-item">
+          <span class="label">Total Words</span>
+          <span class="value" id="wordCount">0</span>
+        </div>
+
+        <div class="reverse-section">
+          <h3>Reversed Text</h3>
+          <div class="reversed-text" id="reversedText"></div>
+        </div>
+
+        <p class="error" id="errorMsg"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
